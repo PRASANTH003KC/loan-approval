@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <style>
+		body {
+  background-image: url('https://images.hdqwalls.com/wallpapers/thumb/light-colors-flow-8k-yr.jpg'); /* replace with the path to your background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+.topnav {
+		background-color: #333;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+.login-box {
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-box h3 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #1e1e1e;
+  text-align: left;
+  font-size: 28px;
+}
+
+.custom {
+  margin-bottom: 20px;
+}
+
+.label-input {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+
+.user-box-op {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.submit-btn {
+  background-color: #ffffff;
+  color: blue;
+  border: black;
+  padding: 30px 50px; /* increase the padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px; /* increase the font-size */
+  margin: 20px auto;
+  border-radius: 30px;
+}
+
+form {
+  text-align: center;
+}
+
+
+	</style>
+</head>
+<body>
+     <div>
+		<a href="home.html">Home</a>
+		<a  href="predict.html">Predict</a>
+	</div>
+	<div>
+
+			<div class="login-box">
+			  <h2>Fill The Details</h2>
+
+			  <form action="/submit" method= "POST">
+
+				<div class="custom">
+			 	  <label class="label-input">Gender</label>
+				  <select class="user-box-op" id="gender" name="gender" >
+				  <option class=wnc value="" selected disabled hidden >Select Gender</option>
+
+				  <option value="0">Female</option>
+				  <option value="1">Male</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Married Status</label>
+				  <select class="user-box-op" id="married" name="married">
+<option value="" selected disabled hidden >Select Married Status</option>
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Dependents</label>
+				  <select class="user-box-op" id="dependents" name="dependents">
+				  	<option value="" selected disabled hidden >Select Option</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+					  <option value="3+">3+</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Education</label>
+				  <select class="user-box-op" id="education" name="education">
+				  	<option value="" selected disabled hidden >Select Education</option>
+				  <option value="0">Graduate</option>
+				  <option value="1">Not Graduate</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Self Employed</label>
+				  <select class="user-box-op" id="self employed" name="self employed">
+				  <option value="" selected disabled hidden >Select Option</option>
+
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				  </select>
+				</div>
+
+				  <div class="custom">
+			 	  <label class="label-input">Credit History</label>
+				  <select class="user-box-op" id="credit history" name="credit history">
+				  <option value="" selected disabled hidden >Select Option</option>
+
+				  <option value="1">1</option>
+				  <option value="0">0</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Property Area</label>
+				  <select class="user-box-op" id="property area" name="property area">
+				  <option value="" selected disabled hidden >Select Option</option>
+
+					  <option value="2">Urban</option>
+				  <option value="0">Rural</option>
+					  <option value="1">SemiUrban</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Applicant Income</label>
+				  <input class="user-box-op" id="applicant income" name="applicant income">
+				  </input>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Co-Applicant Income</label>
+				  <input class="user-box-op" id="coapplicant income" name="coapplicant income">
+				  </input>
+				</div>
+
+				  <div class="custom">
+			 	  <label class="label-input">Loan Amount</label>
+				  <input class="user-box-op" id="loan amount" name="loan amount">
+				  </input>
+				</div>
+
+				  <div class="custom">
+			 	  <label class="label-input">Loan Amount Term</label>
+				  <input class="user-box-op" id="loan amount term" name="loan amount term">
+				  </input>
+				</div>
+
+				  <input type="button" value="Submit" onclick="location.href='result.html';">
+
+			  </form>
+
+<div>
+
+        </div>
+
+			</div>
+
+	</div>
+</body>

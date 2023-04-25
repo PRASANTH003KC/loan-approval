@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Loan Approval</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .status {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .status.success {
+            color: green;
+        }
+        .status.failure {
+            color: red;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Loan Approval</h1>
+
+
+        <div class="status success">
+              <option value="0">Congratulations! Your personal loan has been approved</option>
+        </div>
+        <div class="status failure">
+             <option value="1">Sorry! Your personal loan application has been declined</option>
+        </div>
+        <div class="cta">
+            <a href="home.html">Back to Homepage</a>
+        </div>
+    </div>
+</body>
+</html>
